@@ -1,90 +1,401 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
-header{
-    background-color: #EAC926
-}
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;;
+    background-color: #ebebeb;
 }
-p{
+
+h3 {
+    font-size: 24px;
+}
+
+p {
     font-size: 12px;
 }
 
-main {width: 90%;
-      margin: 5vw;}
+header div.top-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.top-header {
+    
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    
+       
+}
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;        
+    background-color: #EAC926;
+}
 
-main section article{
-    background-color: #fff;
-    box-shadow: 10px rgba(0, 0, 0, 0.445);
+header div picture .logo{
+    width: 100%;
+    padding: 10px;
+    
+}
+
+
+header form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+    flex: 1 0 30vw;
+    justify-content: center;
+    margin-bottom: .5rem; 
+}
+
+.dolar{font-weight: 400;
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 15px;}
+    
+header nav {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.searchBar{
+    width: 70%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    font-size: 12px;
+    border-right: none;
     position: relative;
-    z-index: 1;
-    padding: 15px;
+    bottom: 9px;
 }
-.main-article{border-top: 1px solid #ebebeb;}
+.fas.fa-search.lupa{
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    
+}
 
-footer{
-    font-size: 12px;
+div.barritas {
     text-align: center;
 }
 
-.burger-menu {
-text-align: center;
-background-color: #0044AA;
+div.barritas i {
+    background-color: #0044AA;
     border-radius: 5px;
+    display: block;
     color: #FFF;
     font-size: 20px;
     height: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
-    width: 40px;
-}
-
-.burger a {
-    text-align: center;
-    background-color: #1259c3;
-    font-size: 40px;
-    color: white;
-    width: 5%; 
-    padding: 7px;
-    box-sizing: border-box;
-
-  
-}
-.logo {
-    width: 35vw;
+    margin: auto;
+    padding: 8px 0;
+    max-width: 50px;
 
 }
+.bottom-header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-.top-header{
+.bottom-header a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 0;
+    color: #222222;  
+}
+.bottom-header{
+    display: none;
+}
+.fa-shopping-basket{
+    padding-left: 0.2rem;
+}
+.fa-sign-out-alt{
+    padding-left: 0.2rem;
+}
+.fa-id-card{
+    padding-left: 0.2rem;
+}
+div.last-visit{
+    font-size: 22px;
+    padding-top: 1rem;
+    padding-left:.6rem;
+    padding-bottom: 0.7rem;
+
+}
+div.offers {
+    font-size: 22px;
+    padding-top: 1rem;
+    padding-left:.6rem;
+    padding-bottom: 0.7rem;
+
+}
+
+.price {
+    font-size: 18px;
+    width: 30%;
+    padding: 0 10px 10px 10px;
+    
+    
+}
+
+.discount {
+    width: 70%;
+    font-size: 16px;
+    font-weight: normal;
+    color: #39b54a;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(102, 102, 102);
+    margin-top: 20px;
+}
+
+h3{
+    color: rgb(102, 102, 102);
+}
+
+section.banner img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+main section article {
+    box-shadow: 0px 0px 19px 13px rgba(168,168,168,0.32);
+    margin: 10px 10px 10px 10px;
+    background-color: rgb(255,255,255);
+}
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main section article picture img {
+    width: 100%;
+}
+
+main section article i {
+    color: #39b54a;
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: 20px;
+    left: 80%;
+    top: -15px;
+    transition: all 0.4s ease;
+}
+.fa-truck:hover {
+    transform: rotate(-90deg);
+  }
+
+ .price{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.discount{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+main section h3 {
+    margin: 20px 0px;
+}
+
+article div.main-article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+
+footer section{
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
+footer section div {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    width: 30%;
+}
 
-section.banner img{
-    width: 100%;
-    margin-top: 100px;
+.icono {
+    color: #1259c3;
+    font-size: 2em;
+    padding: 0.7rem 0;
+    
+}
+.icono:hover {
+    color: #39b54a;
+  }
+  .footerC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerC div{
+    align-items: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div p i:hover{
+    color: #39b54a;
 }
 footer div p i{
-    color: #1259c3;
-    font-size: 30px;
     margin: 10px;
     transition: all 0.5s;
+    color: #1259c3;
+    font-size: 30px;
+}
+.copyright{
+    margin-bottom: 15px;
 }
 
-/*Tablet*/
-@media (min-width: 768px) {
-    main {box-shadow:0px 0px 10px rgb(100, 100, 100);}
+.textFooter{
+    width: 80%;
+}
 
+
+/*Tablet*/
+
+@media (min-width: 768px){
+    .dolar{
+        font-size: 14px;
+        width: 40vw;
+        
+    }
+    .top-header{
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .searchBar{
+        width: 25vw;
+        padding: 5px;
+    }
+    header div.logo{
+        width: 35vw;
+    }
+    .fas.fa-search.lupa{
+        padding: 5px;
+    }
+    .bottom-header{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .bottom-header ul{
+        display: flex;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .bottom-header ul li{
+        margin: 10px;
+    }
+    .barritas{
+        display: none;
+    }
+    main section div.products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main section div article{
+        width: 40vw;
+        margin-bottom: 5vw;
+    }
+    .contenedorImg{
+        width: 40vw;
+    }
+    main section article i{
+        right: 7%;
+        bottom: 9%;
+    }
+    /*Register*/
+    .formularioRegistro{
+        width: 80%;
+    }
+
+    /*Login*/
+    .formularioLogin{
+        width: 75vw;
+    }
 }
 
 /*Desktop*/
-@media (min-width: 1200px) {
-    main {box-shadow:0px 0px 10px rgb(100, 100, 100);}
 
+@media (min-width: 1200px){
+    main section div article{
+        width: 20vw;
+        margin-bottom: 5vw;
+    }
+    .contenedorImg{
+        width: 20vw;
+    }
+    .footerC{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footerC div{
+        width: 30%;
+    }
+    .copyright{
+        margin: 15px auto;
+    }
+    .bottom-header ul{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .dolar{
+        font-size: 18px;
+    }
+
+    /*Register*/
+    .formularioRegistro{
+        width: 70%;
+    }
+
+    /*Login*/
+    .formularioLogin{
+        width: 65vw;
+    }
 }
